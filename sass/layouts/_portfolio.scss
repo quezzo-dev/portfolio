@@ -1,0 +1,37 @@
+.portfolio {
+  background-color: $bg-color;
+  &__title {
+    padding-top: 81px;
+    color: $black-color;
+    font-weight: $fw-bold;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 65px;
+  }
+
+  &__list {
+    padding-bottom: 81px;
+    text-align: center;
+    font-weight: $fw-medium;
+    font-size: 18px;
+    line-height: 1.2;
+    color: $black-color;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 78px;
+    }
+  }
+
+  &__picture {
+    display: block;
+    text-align: center;
+    margin-bottom: 33px;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}

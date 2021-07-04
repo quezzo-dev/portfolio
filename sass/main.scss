@@ -1,0 +1,26 @@
+// ========== UTILS ========== \\
+
+@import "./utils/normalize";
+@import "./utils/variables";
+
+// ========== END UTILS ========== \\
+
+// ========== COMMON ========== \\
+
+@import "./common/container";
+@import "./common/base";
+
+// ========== END COMMON ========== \\
+
+// ========== LAYOUTS ========== \\
+
+@import "./layouts/header";
+@import "./layouts/mobile-menu";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/skills";
+@import "./layouts/portfolio";
+@import "./layouts/contacts";
+@import "./layouts/footer";
+
+// ========== END LAYOUTS ========== \\

@@ -1,0 +1,48 @@
+.skills {
+  padding-top: 83px;
+
+  &__title {
+    color: $black-color;
+    font-weight: $fw-bold;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__program {
+    padding-top: 50px;
+    font-weight: $fw-medium;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+  }
+
+  &__program-list {
+    padding-top: 70px;
+    padding-bottom: 98px;
+  }
+
+  &__program-item {
+    margin: 0 auto;
+    max-width: 170px;
+
+    &:not(:last-child) {
+      margin-bottom: 82px;
+    }
+  }
+
+  &__program-img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+
+  &__program-subtitle {
+    text-align: center;
+    color: $grey-color;
+    font-weight: $fw-bold;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}

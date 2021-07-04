@@ -1,0 +1,35 @@
+.contacts {
+  padding-top: 82px;
+  padding-bottom: 48px;
+
+  &__title {
+    color: $black-color;
+    font-weight: $fw-bold;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__subtitle {
+    padding-top: 28px;
+    font-weight: $fw-medium;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    display: block;
+
+    background-color: $black-color;
+    color: $white-color;
+    font-weight: $fw-bold;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 12px 85px;
+    border-radius: 50px;
+  }
+}

@@ -1,0 +1,59 @@
+.about {
+  background-color: $bg-color;
+  padding-top: 81px;
+  padding-bottom: 76px;
+
+  &__title {
+    color: $black-color;
+    font-weight: $fw-bold;
+    font-size: 34px;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__description {
+    color: $black-color;
+    font-weight: $fw-medium;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__text {
+    &:not(:last-child) {
+      padding-bottom: 52px;
+    }
+  }
+
+  &__soft-title,
+  &__tech-title {
+    padding-top: 52px;
+    font-weight: $fw-medium;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+  }
+
+  &__soft-list,
+  &__tech-list {
+    padding-top: 25px;
+  }
+
+  &__soft-item,
+  &__tech-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__soft-text,
+  &__tech-text {
+    text-align: center;
+    color: $grey-color;
+    font-weight: $fw-bold;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}

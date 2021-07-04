@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <button type="button" class="mobile-menu__burger" data-menu-button>
+          <img
+            src="./images/mobile-burger.svg"
+            alt="Open mobile menu button"
+            width="30"
+            height="20"
+          />
+        </button>
+      </div>
+
+      <!-- ==========| Mobile Menu |========== -->
+
+      <div class="container header__container">
+        <div class="mobile-menu" data-menu>
+          <button type="button" class="mobile-menu__cross" data-menu-close>
+            <img
+              src="./images/mobile-cross.svg"
+              alt="Close mobile menu button"
+              width="23"
+              height="23"
+            />
+          </button>
+
+          <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="mobile-menu__link">Home</a>
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="./index.html#about" class="mobile-menu__link"
+                  >About me</a
+                >
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="./index.html#skills" class="mobile-menu__link"
+                  >Skills</a
+                >
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="./index.html#portfolio" class="mobile-menu__link"
+                  >Portfolio</a
+                >
+              </li>
+
+              <li class="mobile-menu__item">
+                <a href="./index.html#contacts" class="mobile-menu__link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- ==========| End Mobile Menu |========== -->
+      </div>
+    </header>
+    <main>
+      <!-- ==========| Hero |========== -->
+
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Vladislav <br />Prokopenko</h1>
+          <p class="hero__description">
+            Junior Front-End Developer<br />
+            18 years old, Kyiv
+          </p>
+
+          <picture class="hero__picture">
+            <source
+              srcset="
+                ./images/hero-img-mobile.jpg    1x,
+                ./images/hero-img-mobile@2x.jpg 2x
+              "
+            />
+            <img
+              src="./images/hero-img-mobile.jpg"
+              alt="Photo Vladislav Prokopenko"
+              width="316.5"
+              height="478"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- ==========| End Hero |========== -->
+
+      <!-- ==========| About |========== -->
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about__title">About me</h2>
+
+          <ul class="about__description">
+            <li class="about__text">
+              Hi, I'm Vladislav – Junior Front-End developer from Kyiv. I'm
+              interested in web development and everything connected with it.
+            </li>
+            <li class="about__text">
+              I'm studying at courses "Fullstack" in GoIT.
+            </li>
+
+            <li class="about__text">
+              Ready to implement excellent projects with wonderful people.
+            </li>
+          </ul>
+
+          <h3 class="about__tech-title">Tech Skills</h3>
+          <ul class="about__tech-list">
+            <li class="about__tech-item">
+              <p class="about__tech-text">HTML5</p>
+            </li>
+
+            <li class="about__tech-item">
+              <p class="about__tech-text">CSS3</p>
+            </li>
+
+            <li class="about__tech-item">
+              <p class="about__tech-text">BEM + SASS</p>
+            </li>
+
+            <li class="about__tech-item">
+              <p class="about__tech-text">Git</p>
+            </li>
+
+            <li class="about__tech-item">
+              <p class="about__tech-text">JavaScript</p>
+            </li>
+
+            <li class="about__tech-item">
+              <p class="about__tech-text">PHP</p>
+            </li>
+          </ul>
+
+          <h3 class="about__soft-title">Soft Skills</h3>
+          <ul class="about__soft-list">
+            <li class="about__soft-item">
+              <p class="about__soft-text">Scrum</p>
+            </li>
+
+            <li class="about__soft-item">
+              <p class="about__soft-text">Agile</p>
+            </li>
+
+            <li class="about__soft-item">
+              <p class="about__soft-text">GTD</p>
+            </li>
+
+            <li class="about__soft-item">
+              <p class="about__soft-text">Teamwork</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==========| End About |========== -->
+
+      <!-- ==========| Skills |========== -->
+
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="skills__title">Skills</h2>
+          <h3 class="skills__program">I work in such programs as</h3>
+          <ul class="skills__program-list">
+            <li class="skills__program-item">
+              <img
+                src="./images/Vs.svg"
+                alt="Visual Studio Code"
+                class="skills__program-img"
+              />
+              <p class="skills__program-subtitle">
+                Visual Studio<br />
+                Code
+              </p>
+            </li>
+            <li class="skills__program-item">
+              <img
+                src="./images/phpStorm.svg"
+                alt="phpStorm"
+                class="skills__program-img"
+              />
+              <p class="skills__program-subtitle">phpStorm</p>
+            </li>
+            <li class="skills__program-item">
+              <img
+                src="./images/Figma.svg"
+                alt="Figma"
+                class="skills__program-img"
+              />
+              <p class="skills__program-subtitle">Figma</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ==========| End Skills |========== -->
+
+      <!-- ==========| Portfolio |========== -->
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title">Portfolio</h2>
+
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a
+                href="https://quezzo-dev.github.io/goit-markup-hw-08/"
+                class="portfolio__link"
+                target="_blank"
+              >
+                <picture class="portfolio__picture">
+                  <source
+                    srcset="
+                      ./images/portfolio-1-mobile.jpg    1x,
+                      ./images/portfolio-1-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio-1-mobile.jpg"
+                    alt="First Project"
+                  />
+                </picture>
+                WebStudio - Homepage
+              </a>
+            </li>
+
+            <li class="portfolio__item">
+              <a
+                href="https://quezzo-dev.github.io/barbershop/"
+                class="portfolio__link"
+                target="_blank"
+              >
+                <picture class="portfolio__picture">
+                  <source
+                    srcset="
+                      ./images/portfolio-2-mobile.jpg    1x,
+                      ./images/portfolio-2-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/portfolio-2-mobile.jpg"
+                    alt="Second Project"
+                  />
+                </picture>
+                Barber - Homepage
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- ==========| End Portfolio |========== -->
+
+      <!-- ==========| Contacts |========== -->
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Contacts</h2>
+          <h3 class="contacts__subtitle">
+            Want to know more or just chat? You are welcome!
+          </h3>
+
+          <a href="mailto:main.prokopenko@gmail.com" class="contacts__btn"
+            >Send message</a
+          >
+        </div>
+      </section>
+
+      <!-- ==========| End Contacts |========== -->
+    </main>
+
+    <!-- ==========| Footer |========== -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a
+              href="https://www.linkedin.com/in/vladislav-prokopenko-35b87420a/"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              href="https://github.com/quezzo-dev"
+              class="footer__link"
+              target="_blank"
+            >
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="footer__item">
+            <a
+              href="https://www.instagram.com/hoh1l/"
+              class="contacts__link"
+              target="_blank"
+            >
+              <svg width="40" height="40">
+                <use href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="footer__description">
+          Like me on LinkedIn, GitHub, Instagram
+        </p>
+      </div>
+    </footer>
+
+    <!-- ==========| End Footer |========== -->
+
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

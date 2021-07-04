@@ -1,0 +1,24 @@
+.hero {
+  padding-top: 65px;
+
+  &__title {
+    font-weight: $fw-bold;
+    font-size: 40px;
+    line-height: 1.2;
+    color: $black-color;
+  }
+
+  &__description {
+    padding-top: 23px;
+    padding-bottom: 37px;
+    font-weight: $fw-medium;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  &__picture {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 83px;
+  }
+}
