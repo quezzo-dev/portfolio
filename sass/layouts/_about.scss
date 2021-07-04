@@ -3,6 +3,11 @@
   padding-top: 81px;
   padding-bottom: 76px;
 
+  @media screen and (min-width: 950px) {
+    padding-top: 120px;
+    padding-bottom: 108px;
+  }
+
   &__title {
     color: $black-color;
     font-weight: $fw-bold;
@@ -28,17 +33,21 @@
 
   &__soft-title,
   &__tech-title {
-    padding-top: 52px;
+    margin-top: 52px;
     font-weight: $fw-medium;
     font-size: 18px;
     line-height: 1.2;
     text-align: center;
     color: $black-color;
+
+    @media screen and (min-width: 950px) {
+      margin: 0;
+    }
   }
 
   &__soft-list,
   &__tech-list {
-    padding-top: 25px;
+    margin-top: 25px;
   }
 
   &__soft-item,
@@ -55,5 +64,28 @@
     font-weight: $fw-bold;
     font-size: 14px;
     line-height: 1.2;
+  }
+
+  &__info {
+    @media screen and (min-width: 950px) {
+      max-width: 490px;
+    }
+  }
+
+  &__thumb {
+    @media screen and (min-width: 950px) {
+      display: flex;
+    }
+  }
+
+  &__skills {
+    @media screen and (min-width: 950px) {
+      display: flex;
+      margin-left: 130px;
+
+      &--second {
+        margin-left: 70px;
+      }
+    }
   }
 }

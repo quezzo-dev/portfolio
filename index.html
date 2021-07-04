@@ -13,8 +13,34 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- ==========| Header |========== -->
+
     <header class="header">
       <div class="container">
+        <div class="header__desktop">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="./index.html" class="header__link">Home</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#about" class="header__link">About me</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#skills" class="header__link">Skills</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Portfolio</a>
+            </li>
+
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+
         <button type="button" class="mobile-menu__burger" data-menu-button>
           <img
             src="./images/mobile-burger.svg"
@@ -74,18 +100,29 @@
         <!-- ==========| End Mobile Menu |========== -->
       </div>
     </header>
+
+    <!-- ==========| End Header |========== -->
+
     <main>
       <!-- ==========| Hero |========== -->
 
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Vladislav <br />Prokopenko</h1>
-          <p class="hero__description">
-            Junior Front-End Developer<br />
-            18 years old, Kyiv
-          </p>
-
+          <div class="hero__thumb">
+            <h1 class="hero__title">Vladislav <br />Prokopenko</h1>
+            <p class="hero__description">
+              Junior Front-End Developer<br />
+              18 years old, Kyiv
+            </p>
+          </div>
           <picture class="hero__picture">
+            <source
+              srcset="
+                ./images/hero-bg-desktop.jpg    1x,
+                ./images/hero-bg-desktop@2x.jpg 2x
+              "
+              media="(min-width: 950px)"
+            />
             <source
               srcset="
                 ./images/hero-img-mobile.jpg    1x,
@@ -95,8 +132,7 @@
             <img
               src="./images/hero-img-mobile.jpg"
               alt="Photo Vladislav Prokopenko"
-              width="316.5"
-              height="478"
+              class="hero__img"
             />
           </picture>
         </div>
@@ -109,66 +145,76 @@
       <section class="about" id="about">
         <div class="container">
           <h2 class="about__title">About me</h2>
+          <div class="about__thumb">
+            <div class="about__info">
+              <ul class="about__description">
+                <li class="about__text">
+                  Hi, I'm Vladislav – Junior Front-End developer from Kyiv. I'm
+                  interested in web development and everything connected with
+                  it.
+                </li>
+                <li class="about__text">
+                  I'm studying at courses "Fullstack" in GoIT.
+                </li>
 
-          <ul class="about__description">
-            <li class="about__text">
-              Hi, I'm Vladislav – Junior Front-End developer from Kyiv. I'm
-              interested in web development and everything connected with it.
-            </li>
-            <li class="about__text">
-              I'm studying at courses "Fullstack" in GoIT.
-            </li>
+                <li class="about__text">
+                  Ready to implement excellent projects with wonderful people.
+                </li>
+              </ul>
+            </div>
 
-            <li class="about__text">
-              Ready to implement excellent projects with wonderful people.
-            </li>
-          </ul>
+            <div class="about__skills">
+              <div class="about__skills--first">
+                <h3 class="about__tech-title">Tech Skills</h3>
+                <ul class="about__tech-list">
+                  <li class="about__tech-item">
+                    <p class="about__tech-text">HTML5</p>
+                  </li>
 
-          <h3 class="about__tech-title">Tech Skills</h3>
-          <ul class="about__tech-list">
-            <li class="about__tech-item">
-              <p class="about__tech-text">HTML5</p>
-            </li>
+                  <li class="about__tech-item">
+                    <p class="about__tech-text">CSS3</p>
+                  </li>
 
-            <li class="about__tech-item">
-              <p class="about__tech-text">CSS3</p>
-            </li>
+                  <li class="about__tech-item">
+                    <p class="about__tech-text">BEM + SASS</p>
+                  </li>
 
-            <li class="about__tech-item">
-              <p class="about__tech-text">BEM + SASS</p>
-            </li>
+                  <li class="about__tech-item">
+                    <p class="about__tech-text">Git</p>
+                  </li>
 
-            <li class="about__tech-item">
-              <p class="about__tech-text">Git</p>
-            </li>
+                  <li class="about__tech-item">
+                    <p class="about__tech-text">JavaScript</p>
+                  </li>
 
-            <li class="about__tech-item">
-              <p class="about__tech-text">JavaScript</p>
-            </li>
+                  <li class="about__tech-item">
+                    <p class="about__tech-text">PHP</p>
+                  </li>
+                </ul>
+              </div>
 
-            <li class="about__tech-item">
-              <p class="about__tech-text">PHP</p>
-            </li>
-          </ul>
+              <div class="about__skills--second">
+                <h3 class="about__soft-title">Soft Skills</h3>
+                <ul class="about__soft-list">
+                  <li class="about__soft-item">
+                    <p class="about__soft-text">Scrum</p>
+                  </li>
 
-          <h3 class="about__soft-title">Soft Skills</h3>
-          <ul class="about__soft-list">
-            <li class="about__soft-item">
-              <p class="about__soft-text">Scrum</p>
-            </li>
+                  <li class="about__soft-item">
+                    <p class="about__soft-text">Agile</p>
+                  </li>
 
-            <li class="about__soft-item">
-              <p class="about__soft-text">Agile</p>
-            </li>
+                  <li class="about__soft-item">
+                    <p class="about__soft-text">GTD</p>
+                  </li>
 
-            <li class="about__soft-item">
-              <p class="about__soft-text">GTD</p>
-            </li>
-
-            <li class="about__soft-item">
-              <p class="about__soft-text">Teamwork</p>
-            </li>
-          </ul>
+                  <li class="about__soft-item">
+                    <p class="about__soft-text">Teamwork</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -230,6 +276,13 @@
                 <picture class="portfolio__picture">
                   <source
                     srcset="
+                      ./images/portfolio-img-1-desktop.jpg    1x,
+                      ./images/portfolio-img-1-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 950px)"
+                  />
+                  <source
+                    srcset="
                       ./images/portfolio-1-mobile.jpg    1x,
                       ./images/portfolio-1-mobile@2x.jpg 2x
                     "
@@ -250,6 +303,13 @@
                 target="_blank"
               >
                 <picture class="portfolio__picture">
+                  <source
+                    srcset="
+                      ./images/portfolio-img-2-desktop.jpg    1x,
+                      ./images/portfolio-img-2-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 950px)"
+                  />
                   <source
                     srcset="
                       ./images/portfolio-2-mobile.jpg    1x,

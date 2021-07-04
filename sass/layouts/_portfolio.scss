@@ -8,6 +8,11 @@
     line-height: 1.2;
     text-align: center;
     padding-bottom: 65px;
+
+    @media screen and (min-width: 950px) {
+      padding-top: 113px;
+      padding-bottom: 47px;
+    }
   }
 
   &__list {
@@ -17,11 +22,18 @@
     font-size: 18px;
     line-height: 1.2;
     color: $black-color;
+
+    @media screen and (min-width: 950px) {
+      padding-bottom: 96px;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: 78px;
+      @media screen and (min-width: 950px) {
+        margin-bottom: 92px;
+      }
     }
   }
 
@@ -29,6 +41,10 @@
     display: block;
     text-align: center;
     margin-bottom: 33px;
+
+    @media screen and (min-width: 950px) {
+      margin-bottom: 44px;
+    }
   }
 
   &__link {

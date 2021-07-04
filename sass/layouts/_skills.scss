@@ -1,5 +1,8 @@
 .skills {
   padding-top: 83px;
+  @media screen and (min-width: 950px) {
+    padding-top: 91px;
+  }
 
   &__title {
     color: $black-color;
@@ -21,6 +24,14 @@
   &__program-list {
     padding-top: 70px;
     padding-bottom: 98px;
+
+    @media screen and (min-width: 950px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 84px;
+      padding-bottom: 110px;
+    }
   }
 
   &__program-item {
@@ -29,6 +40,9 @@
 
     &:not(:last-child) {
       margin-bottom: 82px;
+      @media screen and (min-width: 950px) {
+        margin-bottom: 0;
+      }
     }
   }
 
