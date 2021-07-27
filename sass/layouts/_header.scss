@@ -17,6 +17,15 @@
       color: $black-color;
     }
   }
+
+  &__link {
+    transition: color 250ms $cubic;
+  }
+
+  &__link:focus,
+  &__link:hover {
+    color: $black-color;
+  }
 }
 
 @media screen and (max-width: 949px) {
